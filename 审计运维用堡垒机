@@ -1,0 +1,10 @@
+1 root management(权限管理):
+为了方便某些公司给业务管理员分配权限的问题
+可以用堡垒机给 负责A业务的人分配5 台服务器，通过 root权限登录10台Hadoop，但是对其他的服务器无访问权限
+多个运维人员可以共享同一个root账户，但是依然可以分出是谁在哪些服务区上操作了哪些命令，因为堡垒机的账户是每个人独有的。
+即：虽然每个运维人员都用同一个远程账号，但由于堡垒账户是独有的，所以也能用堡垒机控制每个运维人员的访问权限
+
+##注：Hadoop：是一个分布式系统 基础架构。 用户可以在不了解分布式的底层细节的情况下，开发分布式程序。
+Hadoop 实现了 分布式文件系统（Hadoop Distributed file system）HDFS.这个HDFS具有高容错性，并且HDFS放宽了POSIX的要求，可以用flow的形式访问（streaming access）文件系统中的数据
+￥注： POSIX （Portable Operating Interface）可移植操作系统接口
+Lightweight Directory Access Protocol（LDAP）轻型目录存取协议
